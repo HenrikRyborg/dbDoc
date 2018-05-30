@@ -7,8 +7,7 @@ import jinja2_highlight
 # Setup Flask and read config from ConfigClass defined above
 class MyFlask(Flask):
     jinja_options = dict(Flask.jinja_options)
-    jinja_options.setdefault('extensions',
-        []).append('jinja2_highlight.HighlightExtension')
+    jinja_options.setdefault('extensions',[]).append('jinja2_highlight.HighlightExtension')
 
 app = MyFlask(__name__)
 app.config.from_object('config.DevelopmentConfig')

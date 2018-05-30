@@ -8,10 +8,6 @@ class BaseConfig(object):
     SIJAX_JSON_URI                      = 'app/static/js/sijax/json2.js'
     JSON_AS_ASCII                       = False
     TEMPLATES_AUTO_RELOAD               = True
-    # SQLALCHEMY_DATABASE_URI             = os.environ['db']
-    # SQLALCHEMY_TRACK_MODIFICATIONS      = False
-    # SESSION_TYPE                        = 'sqlalchemy'
-    # SESSION_SQLALCHEMY_TABLE            = 'sessions'
     PERMANENT_SESSION_LIFETIME          = datetime.timedelta(hours=4)
 
 class DevelopmentConfig(BaseConfig):
